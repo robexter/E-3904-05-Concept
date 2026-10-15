@@ -1,0 +1,1 @@
+Substitua o index.html na raiz do repositório robexter/E-3904-05-Concept. O sw.js foi mantido no pacote apenas por conferência; para esta mudança visual, o principal arquivo é o index.html. Se o navegador mantiver a versão anterior, faça atualização forçada (Ctrl+F5) ou limpe o cache do site.
