@@ -1,16 +1,14 @@
-CONCEPT V5 — E-3904/05 — Absorvedora primária + retificadora
+E-3904 / E-3905 Concept — refinamento responsivo mobile V4
 
-OPÇÃO MAIS SIMPLES / RECOMENDADA:
-1. No repositório E-3904-05-Concept envie apenas conteudo-integral.js da V5.
-2. Garanta no index.html, imediatamente antes de </body>:
-   <script defer src="./conteudo-integral.js?v=5"></script>
-3. Se já houver tag com ?v=4, altere SOMENTE para ?v=5.
-4. Não remova/desative scripts, conteúdo ou imagens originais.
-5. Feche/reabra o app para atualizar o service worker, se preciso.
+Corrige o problema relatado após a V3:
+• No portal integrado Área Fria, exibe somente o cabeçalho pequeno do portal.
+• Oculta o cabeçalho grande duplicado da página em telas de até 760px.
+• Preserva o botão de Modo edição em uma pequena barra de ferramentas.
+• Mantém Resumo compacto na primeira linha; Conteúdo Integral e Laboratório lado a lado na segunda, inclusive com 320px.
+• Fora do portal (acesso direto ao equipamento), conserva o título original do equipamento.
+• Preserva a imagem de processo, as lâmpadas, a base de textos, a edição, o Conteúdo Integral e o Laboratório V5.
 
-O arquivo V5 inclui a V4 integral inalterada + Laboratório Concept V5. Não inclua laboratorio-concept.js adicionalmente se usar o arquivo combinado (isso duplicaria recursos).
+PUBLICAÇÃO: no repositório https://github.com/robexter/E-3904-05-Concept substitua APENAS index.html na raiz. Não é necessário baixar ou substituir sw.js, nem alterar o repositório do portal.
+O cabeçalho externo Início / E-3904/05 / X pertence ao portal, e sua apresentação menor continuará visível. O botão “Abrir separado” permanece oculto apenas para E-3904/05 pelas regras existentes da V3.
 
-OPÇÃO ALTERNATIVA, SOMENTE SE VOCÊ JÁ USA V4:
-Mantenha conteudo-integral.js V4 e acrescente <script defer src="./laboratorio-concept.js?v=5"></script>.
-
-São índices didáticos sintéticos não calibrados: não usar como limites/ações reais de processo.
+Se a página antiga permanecer após o commit: feche a página/PWA, reabra a URL do módulo e atualize o navegador; no navegador normal use Ctrl+F5.
